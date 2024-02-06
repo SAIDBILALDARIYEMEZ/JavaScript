@@ -1,7 +1,7 @@
 // ********** Template Literals Kullanimi [option + , = (`)] **********
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
-let username = "hakan"
+let username = "Said"
 const DOMAIN = "kodluyoruz.org"
 
 //eski kullanıım, satır atlayıp  yazamzsın. yani yazdıklarını tek satırda kullanmak zorundasın.

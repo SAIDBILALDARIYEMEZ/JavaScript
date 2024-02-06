@@ -34,7 +34,7 @@ kullanılamaz çünkü kod satırları okunurken sıra ile okunur. önce tanıml
 
 /* HATALI KULLANIM:  
 console.log(fullName)
-let fullName = "Hakan Yalcinkaya";
+let fullName = "Said Bilal";
 */
 
 
@@ -42,7 +42,7 @@ let fullName = "Hakan Yalcinkaya";
 let ile tanimlanan degiskenin icindeki bilgiyi degistirmek:
 kod sıra ile okundupu için önceki tanım sonraki tanım yüzünden ezildi ve okunmadı
 */
-let fullName = "Hakan Yalcinkaya";
+let fullName = "Said Bilal";
 fullName = "Lorem Ipsum Dolor"
 console.log(fullName)
 

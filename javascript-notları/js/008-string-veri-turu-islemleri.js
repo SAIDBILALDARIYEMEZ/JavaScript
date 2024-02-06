@@ -1,9 +1,9 @@
 // ********** String Veri Turu Islemleri ********** 
 // https://www.w3schools.com/jsref/jsref_obj_string.asp
 
-let email = "hakanyalcinkaya@gmail.com"
-let firstName = "hakan"
-let lastName = "YALCINKAYA"
+let email = "saidbilal@gmail.com"
+let firstName = "Said"
+let lastName = "Bilal"
 
 /*
 string karakter sayisi -> length
@@ -53,7 +53,7 @@ console.log(
 bilgiyi degistir -> replace :
 */
 email = email.replace('gmail.com', 'kodluyoruz.org') // burada ilk başta bu değişikliği bir değişkene tanımlamammız gerekli. (email)
-console.log(email) //hakanyalcinkaya@kodluyoruz.org
+console.log(email) //saidbilal@kodluyoruz.org
 
 
 /*
@@ -79,7 +79,7 @@ console.log(
 )
 
 console.log(
-    email.startsWith('hakan') // bu ilgi ile başladı // true
+    email.startsWith('said') // bu ilgi ile başladı // true
 )
 
 

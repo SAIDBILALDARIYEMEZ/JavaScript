@@ -12,10 +12,10 @@ let fullName = ""
 let kodluyoruzServerInfo = "" // bu dogru :)
 let kodluyoruzSERverInfo = "" // bu dogru kullanim degil :(
 
-// let firstName = "Hakan", lastName = "Yalcinkaya"
+// let firstName = "Said", lastName = "Bilal"
 // burada çıktı alınabil ama çıktı alınabiliyot aolması kod okunaklığını gereksiz saymaz. kod okunaklığı için aşağıdaki formatta yazılması gereklidir.
-let firstName = "Hakan"
-let lastName = "Yalcinkaya"
+let firstName = "Said"
+let lastName = "Bilal"
 console.log(firstName, lastName)
 
 // UPPER_CASE Kullanimi: önem ifade eden değişkenler bunla yazılması hem önemine vurgu yapar. hem okunaklığı arttırır.
