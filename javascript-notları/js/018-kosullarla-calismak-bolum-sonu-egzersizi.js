@@ -34,13 +34,12 @@ const ANGRY = `
 
 let not = prompt("Lütfen notunuzu giriniz:")
 
-let textInfo;
-
 let info = document.querySelector("#info")
 
 info.classList.add('text-primary')
 
-var canBuy =
+
+var exam =
     (not >= 90 && not <= 100) ? info.innerHTML = `${SMILE} ${not} -> AA`:
         (not >= 85 && not <= 89) ? info.innerHTML = `${SMILE} ${not} -> BA` :
             (not >= 80 && not <= 84) ? info.innerHTML = `${SMILE} ${not} -> BB` :
@@ -49,10 +48,10 @@ var canBuy =
                         (not >= 65 && not <= 69) ? info.innerHTML = `${SMILE} ${not} -> DC` :
                             (not >= 60 && not <= 64) ? info.innerHTML = `${SMILE} ${not} -> DD` :
                                 ( not >= 50 && not <= 59) ? info.innerHTML = `${SMILE} ${not} -> FD`:
-                                    (not < 50 && not >= 0) ? info.innerHTML = `${ANGRY} ${not} -> FF`:
+                                    (not < 50 && not >= 0) ? info.innerHTML  = `${ANGRY} ${not} -> FF`:
                                         "Lütfen geçer not giriniz";
 
-console.log(canBuy)
+console.log(exam)
 
 
 
