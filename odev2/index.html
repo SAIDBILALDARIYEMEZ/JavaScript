@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+    />
+    <title>Yapılacaklar Listesi</title>
+</head>
+<body>
+
+
+<!--Listeye eklendi +-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="toast success hide"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Listeye eklendi</div>
+        </div>
+    </div>
+</div>
+
+<!--Listeyi boş olarak ekleyemezsiniz. +-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="toast error hide"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Listeyi boş olarak ekleyemezsiniz.</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--silme işlemi gerçekleşti -->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="delete toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">silme işlemi gerçekleşti</div>
+        </div>
+    </div>
+</div>
+
+<!-- Tümü Silindi + -->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="delete-all toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Tümü Silindi</div>
+        </div>
+    </div>
+</div>
+
+<!-- Silinecek öge bulunmadı + -->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="delete-none toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Silinecek öge bulunmadı</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--görev tamamlanmaıştır.-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="completion toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">görev tamamlanmaıştır.</div>
+        </div>
+    </div>
+</div>
+
+<!--tamamlama iptal edildi-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="completion-removed toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">tamamlama iptal edildi</div>
+        </div>
+    </div>
+</div>
+
+
+<!--Tümü Tamamlandı. +-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="completion-all toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Tümü Tamamlandı.</div>
+        </div>
+    </div>
+</div>
+
+<!--bütün tamamlamalar kaldırıldı. +-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="completion-all-removed toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">bütün tamamlamalar kaldırıldı.</div>
+        </div>
+    </div>
+</div>
+
+<!--tamamlancak görev bulunamadı.-->
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div
+                class="completion-all-none toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="4000"
+        >
+            <div>
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="toast"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">tamamlancak görev bulunamadı.</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--container-->
+<div class="container">
+    <div class="header">
+        <img
+                src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+                class="mb-1"
+                alt=""
+        />
+        <h2>Yapılacaklar Listesi</h2>
+        <input type="text" id="task" placeholder="Bu gün ne yapacaksın?" />
+        <span onclick="newElement()" id="liveToastBtn" class="button mb-3"
+        >Ekle</span
+        >
+        <div class="text-left border-0">
+            <button type="button" class="btnn" id="completeAllBtn">✅ Tümünü Tamamla</button>
+            <button type="button" class="btnn" id="deleteAllBtn">❌ Tümünü Sil</button>
+        </div>
+
+    </div>
+
+    <ul id="list"></ul>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+</div>
+
+</body>
+</html>
