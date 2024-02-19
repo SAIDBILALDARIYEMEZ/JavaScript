@@ -10,7 +10,7 @@ const cancel = `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" f
 getLocalStorage()
 
 function newElement() {
-    var inputValue = task.value.trim(); // Trim ile baştaki ve sondaki boşlukları kaldır
+    var inputValue = task.value.trim();
 
     if (inputValue !== "") {
         createElement(inputValue);
@@ -58,11 +58,13 @@ function deleteElement(link) {
     localArray.forEach((rm, index) =>{
         if(rm == parentSplit[0]){
             localArray.splice(index, 1);
+            $(".delete").toast('show');
         }
     })
     localStorage.setItem("localLi", JSON.stringify(localArray));
 }
 
+ /*localli anahtarını varlığını kontrol eder. olmaması durumuna göre null döner*/
 function setLocalArray() {
     if(localStorage.getItem("localLi") === null){
         localArray = []
@@ -71,12 +73,14 @@ function setLocalArray() {
     }
 }
 
+/*localli değerine bağlı dizi değerini günceller.*/
 function setLocalStorage(value){
     setLocalArray()
     localArray.push(value)
     localStorage.setItem("localLi", JSON.stringify(localArray))
 }
 
+/*lokalli değerini kontrol ederek dayfa üstünde oluşmasını sağlar.*/
 function getLocalStorage () {
     setLocalArray()
     if(localArray){
@@ -122,17 +126,28 @@ function deleteAllElements() {
     }
 }
 
+function searchMenu(){
 
+    const searchInput = document.querySelector("#search");
 
-/*
-function deleteAllElements() {
-    var allLi = document.querySelectorAll("#list li");
-    allLi.forEach((elem) => {
-        elem.remove();
-        setLocalArray();
+    searchInput.addEventListener("keyup",function(){
+
+        let data = this.value.toUpperCase();
+        let li = document.querySelectorAll("#list li");
+        for( let i = 0; i < li.length; i++) {
+            if(li[i].innerText.toUpperCase().includes(data)){
+                // eşleşme var
+                li[i].style.display = "";
+            } else {
+                // eşleşme yok
+                li[i].style.display = "none";
+            }
+        }
+
     });
-    localStorage.removeItem("localLi");
+
 }
-*/
+
+searchMenu();
 
 

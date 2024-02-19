@@ -36,6 +36,10 @@ ul li.checked {
     text-decoration: line-through;
 }
 
+.secme {
+    user-select: auto;
+}
+
 ul li.checked::before {
     content: "";
     position: absolute;
@@ -115,6 +119,18 @@ input {
 }
 
 .btnn:hover{
-    bordder: black;
+    box-shadow: #171616;
     transition: 0.3s;
+}
+
+.none {
+    display: none;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+.color:hover {
+    color: #555555;
 }
